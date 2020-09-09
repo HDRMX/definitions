@@ -623,19 +623,23 @@
 				<xs:sequence>
 					<xs:element name="dimensions" type="nx:dimensionsType" minOccurs="0" maxOccurs="1">
 						<xs:annotation>
-							<xs:documentation>dimensions of a data element 
-							in a NeXus file</xs:documentation>
+							<xs:documentation>
+								dimensions of a data element in a NeXus file
+							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="attribute" type="nx:attributeType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>attributes to be used with this field</xs:documentation>
+							<xs:documentation>
+								attributes to be used with this field
+							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="enumeration" type="nx:enumerationType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>A field can specify which 
-							values are to be used</xs:documentation>
+							<xs:documentation>
+								A field can specify which values are to be used
+							</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -700,14 +704,14 @@
 							NOTE: Use of this attribute is discouraged.  It is for legacy support.
 							You should use the axes attribute on the NXdata group instead.
 							
-							Presence of the ``axis`` attribute means this field is an abcissa.
+							Presence of the ``axis`` attribute means this field is an abscissa.
 							
 							The attribute value is an integer indicating this
 							field as an axis that is part of the data set.
 							The data set is a field with the attribute 
 							``signal=1`` in the same group.
 							The value can range from 1 up to the number of 
-							independent axes (abcissae) in the data set.  
+							independent axes (abscissae) in the data set.  
 							
 							A value of ``axis=1``" indicates that this field 
 							contains the data for the first independent axis.  
@@ -733,7 +737,7 @@
 							of this field for plotting (or visualization) as an axis.
 							
 							Presence of the ``primary`` attribute means this 
-							field is an abcissa.
+							field is an abscissa.
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
@@ -818,7 +822,7 @@
 				<xs:attribute name="data_offset" use="optional"  default="1" type="nx:nonNegativeUnbounded">
 					<xs:annotation>
 						<!--
-							note: renamed from "offset" due to comflict with CIF usage.
+							note: renamed from "offset" due to conflict with CIF usage.
 							see: https://github.com/nexusformat/definitions/issues/330#issuecomment-232074420
 							-->
 						<xs:documentation>
@@ -1207,7 +1211,7 @@
 	
 	<xs:complexType name="dimensionsType">
 		<!-- 
-			see TRAC ticket #32: https://github.com/nexusformat/definitions/issues/32 
+			see issue #32: https://github.com/nexusformat/definitions/issues/32 
 		-->
 		<xs:annotation>
 			<xs:documentation>
